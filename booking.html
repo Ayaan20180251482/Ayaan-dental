@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Ayaan Dental Clinic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">🦷 Ayaan Dental Clinic</div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-container">
+                <h1>Book Your Appointment</h1>
+                <p class="booking-subtitle">Fill in your details below to book an appointment with Dr. Ayaan Khan</p>
+
+                <form id="bookingForm" class="booking-form">
+                    <!-- Name -->
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="form-group">
+                        <label for="phone">Your Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="Enter your WhatsApp number">
+                        <small>We'll send booking confirmation to this number</small>
+                    </div>
+
+                    <!-- Service -->
+                    <div class="form-group">
+                        <label for="service">Select Service *</label>
+                        <select id="service" name="service" required>
+                            <option value="">-- Select a service --</option>
+                            <option value="General Checkup">General Checkup</option>
+                            <option value="Teeth Whitening">Teeth Whitening</option>
+                            <option value="Root Canal">Root Canal Treatment</option>
+                            <option value="Dental Implants">Dental Implants</option>
+                            <option value="Orthodontics">Orthodontics</option>
+                            <option value="Cosmetic Dentistry">Cosmetic Dentistry</option>
+                            <option value="Other">Other (mention in notes)</option>
+                        </select>
+                    </div>
+
+                    <!-- Date -->
+                    <div class="form-group">
+                        <label for="date">Select Date *</label>
+                        <input type="date" id="date" name="date" required>
+                        <small>Available: Monday - Saturday</small>
+                    </div>
+
+                    <!-- Time -->
+                    <div class="form-group">
+                        <label for="time">Select Time *</label>
+                        <select id="time" name="time" required>
+                            <option value="">-- Select a time --</option>
+                            <option value="10:00 AM">10:00 AM</option>
+                            <option value="10:30 AM">10:30 AM</option>
+                            <option value="11:00 AM">11:00 AM</option>
+                            <option value="11:30 AM">11:30 AM</option>
+                            <option value="12:00 PM">12:00 PM</option>
+                            <option value="12:30 PM">12:30 PM</option>
+                            <option value="02:00 PM">2:00 PM</option>
+                            <option value="02:30 PM">2:30 PM</option>
+                            <option value="03:00 PM">3:00 PM</option>
+                            <option value="03:30 PM">3:30 PM</option>
+                            <option value="04:00 PM">4:00 PM</option>
+                            <option value="04:30 PM">4:30 PM</option>
+                            <option value="05:00 PM">5:00 PM</option>
+                            <option value="05:30 PM">5:30 PM</option>
+                            <option value="06:00 PM">6:00 PM</option>
+                            <option value="06:30 PM">6:30 PM</option>
+                        </select>
+                    </div>
+
+                    <!-- Number of People -->
+                    <div class="form-group">
+                        <label for="people">Number of People *</label>
+                        <select id="people" name="people" required>
+                            <option value="">-- Select --</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5">5+ People</option>
+                        </select>
+                    </div>
+
+                    <!-- Notes -->
+                    <div class="form-group">
+                        <label for="notes">Additional Notes (Optional)</label>
+                        <textarea id="notes" name="notes" rows="4" placeholder="Any specific concerns or preferences..."></textarea>
+                    </div>
+
+                    <!-- Agreement -->
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="agree" name="agree" required>
+                        <label for="agree">I agree to receive appointment confirmation via WhatsApp</label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Complete Booking</button>
+                </form>
+
+                <div class="booking-info">
+                    <p><strong>ℹ️ After booking:</strong></p>
+                    <ul>
+                        <li>✓ You'll receive confirmation on WhatsApp</li>
+                        <li>✓ Doctor's contact and location details will be sent</li>
+                        <li>✓ You can reach us anytime via WhatsApp or call</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ayaan Dental Clinic. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
